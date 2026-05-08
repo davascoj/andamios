@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visor 3D Andamios</title>
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <style>
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background: #111;
+      font-family: Arial, sans-serif;
+    }
+
+    model-viewer {
+      width: 100%;
+      height: 100vh;
+      background-color: #f2f2f2;
+    }
+
+    .titulo {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(0,0,0,0.70);
+      color: white;
+      padding: 10px 14px;
+      border-radius: 8px;
+      z-index: 10;
+      font-size: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="titulo">Visor 3D - Andamios</div>
+
+  <model-viewer
+    src="Andamios1.glb"
+    camera-controls
+    auto-rotate
+    shadow-intensity="1"
+    exposure="1"
+    ar>
+  </model-viewer>
+</body>
+</html>
